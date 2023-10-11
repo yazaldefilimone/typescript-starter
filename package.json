@@ -1,17 +1,40 @@
 {
   "name": "typescript-starter",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "Typescript starter with vitest, prettier, eslint. All the tools you need to build your project.",
-  "main": "index.js",
+  "main": "index.ts",
   "repository": "git@github.com:yazaldefilimonepinto/typescript-starter.git",
   "author": "Yazalde Filimone <yazaldefilimon@gmail.com>",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "node  ./dist/index.js",
+    "dev": "tsx  ./index.ts",
+    "dev:watch": "tsx watch ./index.ts",
+    "build": "tsc  ",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write './**/*.ts'",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "lint:all": " npm run format && npm run lint:fix && npm run lint",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui"
+  },
   "devDependencies": {
     "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^4.2.1",
     "vitest": "^0.34.6"
+  },
+  "engines": {
+    "node": ">=18.13.0"
   }
 }
