@@ -1,0 +1,8 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yazaldefilimonepinto/typescript-starter.git",
+  "author": "Yazalde Filimone <yazaldefilimon@gmail.com>",
+  "license": "MIT"
+}
