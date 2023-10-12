@@ -1,3 +1,4 @@
+<samp>
  <p align="center">
   <img src="https://img.shields.io/static/v1?label=TypeScript Starter&message=Welcome&color=FFFFFF&labelColor=110C2F" alt="TypeScript Starter welcome!" />
   <img alt="License" src="https://img.shields.io/static/v1?label=version&message=1.0&color=FFFFFF&labelColor=110C2F">
